@@ -1,0 +1,27 @@
+{
+  "name": "roguelike",
+  "version": "0.0.1",
+  "description": "roguelike game",
+  "main": "src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc -w",
+    "build": "webpack --config ./build/webpack.config.js"
+  },
+  "keywords": [
+    "roguelike",
+    "game",
+    "demo"
+  ],
+  "author": "you",
+  "license": "ISC",
+  "devDependencies": {
+    "pm2": "^3.0.0",
+    "ts-loader": "^4.4.2",
+    "tslint": "^5.10.0",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
