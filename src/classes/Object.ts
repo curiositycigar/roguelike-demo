@@ -31,15 +31,19 @@ class Creature {
   // appearance 外表影响基础属性的表现，影响装备的基础属性附加值
   public eyes: number // 敏捷up 精力down
   public ears: number // 敏捷up
-  public arms: number // 敏捷up 力量up
-  public legs: number // 敏捷up 力量up
+  public arms: 2 | 4 | 6 // 敏捷up 力量up
+  public legs: 2 | 4 // 敏捷up 力量up
+  // 天生物种体型，后天成长可浮动一两点，默认100，体型影响食量
   public size: number // 敏捷down 力量up
   constructor() {
     this.level = 0
+    this.experience = 0
     this.skills = []
     this.points = 0
     // base
-    this.strength = 1
+    this.strength = 10
+    this.agile = 10
+    this.vigor = 10
     // high level
     this.wuxing = {
       jin: Math.random() * 100,
@@ -53,5 +57,8 @@ class Creature {
       yin,
       yang: 100 - yin,
     }
+  }
+  public attack(skill: any) {
+    console.log(skill)
   }
 }
