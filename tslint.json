@@ -4,6 +4,7 @@
     "src/"
   ],
   "rules": {
+    "max-classes-per-file": false,
     "max-line-length": {
       "options": [
         120
